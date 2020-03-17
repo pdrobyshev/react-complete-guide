@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Person from "./Person/Person";
+import Person from "./Components/Person/Person";
 
 class App extends Component {
     state = {
@@ -21,7 +21,6 @@ class App extends Component {
         const person = {
             ...this.state.persons[personIndex]
         };
-        // const person = Object.assign({}, this.state.persons[personIndex]);
 
         person.name = event.target.value;
 
@@ -32,7 +31,6 @@ class App extends Component {
     };
 
     deletePersonHandler = (personIndex) => {
-        // const persons = this.state.persons.slice();
         const persons = [...this.state.persons];
         persons.splice(personIndex, 1);
         this.setState({persons: persons});
@@ -85,7 +83,6 @@ class App extends Component {
                 {persons}
             </div>
         );
-        // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
     }
 }
 
