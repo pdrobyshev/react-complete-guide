@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './App.css';
-import Person from "./Components/Person/Person";
+import '../App.css';
+import Person from "./Components/Persons/Person/Person";
 
 const AppHooks = () => {
     const [personsState, setPersonsState] = useState({

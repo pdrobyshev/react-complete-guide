@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import '../App.css';
 import UserInput from "./Components/Task1/UserInput/UserInput";
 import UserOutput from "./Components/Task1/UserOutput/UserOutput";
 

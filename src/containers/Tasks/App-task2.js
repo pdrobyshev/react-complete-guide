@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import '../App.css';
 import Validation from "./Components/Task2/Validation/Validation";
 import Char from "./Components/Task2/Char/Char";
 
