@@ -21,14 +21,19 @@ class Persons extends Component {
 		return { message: 'Snapshot!' };
 	}
 
-	componentWillUpdate(nextProps, nextState, nextContext) {
-		console.log('[Persons.js] componentWillUpdate');
-	}
+	// componentWillUpdate(nextProps, nextState, nextContext) {
+	// 	console.log('[Persons.js] componentWillUpdate');
+	// }
 
 	componentDidUpdate(prevProps, prevState, snapshot) {
 		console.log('[Persons.js] componentDidUpdate');
 		console.log(snapshot);
 	}
+
+	componentWillUnmount() {
+		console.log('[Persons.js] componentWillUnmount');
+	}
+
 
 	render() {
 		console.log('[Persons.js] rendering...');
